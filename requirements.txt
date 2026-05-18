@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+pillow
+opencv-python
+rasterio
+tifffile
+torch
+torchvision
+scikit-image
+tqdm

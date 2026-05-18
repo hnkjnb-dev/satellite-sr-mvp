@@ -1,0 +1,25 @@
+cat > .gitignore << 'EOF'
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Data
+data/
+outputs/
+models/
+*.tif
+*.tiff
+*.png
+*.jpg
+*.jpeg
+*.pth
+*.pt
+*.ckpt
+
+# Mac
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
