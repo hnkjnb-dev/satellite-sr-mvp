@@ -23,3 +23,6 @@ models/
 
 # Jupyter
 .ipynb_checkpoints/
+
+# External reference repositories
+external_repos/
