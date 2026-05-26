@@ -1,0 +1,17 @@
+# config/default.yml
+
+path:
+  [cite_start]train_csv: "metadata/train.csv"            # MVP 단계에서 구축한 train.csv 경로 [cite: 578]
+  [cite_start]pretrained_model: "weights/mentor_171M.pth" # 멘토님이 공유해주실 171M 모델 가중치 파일명 [cite: 833, 861]
+  save_dir: "experiments/exp1"               # 학습 결과 및 체크포인트가 저장될 폴더
+
+model:
+  [cite_start]name: "RRDB_LINF_Edge"                     # 엣지 블록을 결합하여 선 표현력을 강화한 모델명 [cite: 862]
+  [cite_start]size: "171M"                               # 멘토님 제공 모델 크기 [cite: 861]
+  [cite_start]in_channels: 3                             # 입력 이미지 채널 수 (RGB) [cite: 557]
+  [cite_start]out_channels: 3                            # 출력 이미지 채널 수 (RGB) [cite: 557]
+
+train:
+  batch_size: 16                             # 유료 고사양 GPU 환경을 고려한 배치 사이즈
+  lr: 0.0001                                 # 기본 파인튜닝 학습률 (Learning Rate)
+  epochs: 20                                 # 1차 파인튜닝 실험을 위한 에포크 수
