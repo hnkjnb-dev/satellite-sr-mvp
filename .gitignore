@@ -26,3 +26,7 @@ models/
 
 # External reference repositories
 external_repos/
+
+# 대용량 모델 가중치 파일은 GitHub 추적에서 제외
+weights/*.pth
+experiments/
